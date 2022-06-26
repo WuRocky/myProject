@@ -27,85 +27,97 @@
         />
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li>
-                    <a href="resume.html">我的履歷</a>
-                </li>
-                <li><a class="active" href=="#">聯絡方式</a></li>
-                <li>
-                    <a href="./Taiwan Project/index.html"
-                        >Taiwan Project</a
-                    >
-                </li>
-                <li>
-                    <a href="./Hawaii Project/index.html"
-                        >Hawaii Project</a
-                    >
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li>
+                        <a href="resume.html">我的履歷</a>
+                    </li>
+                    <li><a class="active" href="#">聯絡方式</a></li>
+                    <li>
+                        <div class="dropdown">
+                            作品集
+                            <div class="dropdown-content">
+                                <a href="./Taiwan Project/index.html"
+                                    >Taiwan Project</a
+                                >
+                                <a href="./Hawaii Project/index.html"
+                                    >Hawaii Project</a
+                                >
+                                <a href="./Choose Restaurant/index.html"
+                                    >Choose Restaurant</a
+                                >
+                                <a href="./Todo List/">Todo List</a>
+                                <a href="MyStore/index.html">Suit Shop</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section class="from">
-            <form>
-                <div>
-                    <label for="name">姓名:</label>
-                    <input type="text" name="name">
+        <main>
+            <section class="from">
+                <form>
+                    <div>
+                        <label for="name">姓名:</label>
+                        <input type="text" name="name" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="email">郵件:</label>
+                        <input type="email" name="email" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="phone">電話:</label>
+                        <input type="text" name="phone" />
+                    </div>
+                    <br />
+                    <div>
+                        <label for="need">需求:</label>
+                        <textarea
+                            name="need"
+                            id="need"
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <br />
+                    <button type="submit">提交表單</button>
+                </form>
+            </section>
+            <div class="line"></div>
+            <section class="contact">
+                <div class="content">
+                    <h2>我的電話: 0976-739-389</h2>
+                    <h2>我的Email:rockywu971@gmail.com</h2>
+                    <h2>方便聯絡時間:周一至周六晚上7點到晚上10點</h2>
+                    <h2>其他聯絡方式:臉書、IG</h2>
                 </div>
-                <br>
-                <div>
-                    <label for="email">郵件:</label>
-                    <input type="email" name="email">
-                </div>
-                <br>
-                <div>
-                    <label for="phone">電話:</label>
-                    <input type="text" name="phone">
-                </div>
-                <br>
-                <div>
-                    <label for="need">需求:</label>
-                    <textarea name="need" id="need" rows="10"></textarea>
-                </div>
-                <br>
-                <button type="submit">提交表單</button>
-            </form>
-        </section>
-        <div class="line"></div>
-        <section class="contact">
-            <div class="content">
-                <h2>我的電話: 0976-739-389</h2>
-                <h2>我的Email:rockywu971@gmail.com</h2>
-                <h2>方便聯絡時間:周一至周六晚上7點到晚上10點</h2>
-                <h2>其他聯絡方式:臉書、IG</h2>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <a href="#"
-            ><img
-                src="./ICONS/facebook.svg"
-                alt="facebook"
-                title="facebook page"
-        /></a>
-        <a href="#"
-            ><img
-                src="./ICONS/instagram.svg"
-                alt="instagram"
-                title="instagram page"
-        /></a>
-        <a href="#"
-            ><img
-                src="./ICONS/github-brands 1.svg"
-                alt="github"
-                title="github page"
-        /></a>
-    </footer>
-</body>
+        <footer>
+            <a href="https://www.facebook.com/wu.j.kuan.1"
+                ><img
+                    src="./ICONS/facebook.svg"
+                    alt="facebook"
+                    title="facebook page"
+            /></a>
+            <a href="https://www.instagram.com/rocky_wide"
+                ><img
+                    src="./ICONS/instagram.svg"
+                    alt="instagram"
+                    title="instagram page"
+            /></a>
+            <a href="https://github.com/WuRocky/myProject"
+                ><img
+                    src="./ICONS/github-brands 1.svg"
+                    alt="github"
+                    title="github page"
+            /></a>
+        </footer>
+    </body>
 </html>

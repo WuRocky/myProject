@@ -44,6 +44,40 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header nav ul .dropdown {
+  font-size: 1.8rem;
+}
+
+header nav ul .dropdown a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header nav ul .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+header nav ul .dropdown:hover .dropdown-content {
+  display: block;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
