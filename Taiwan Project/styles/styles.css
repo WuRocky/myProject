@@ -104,6 +104,52 @@ main section.farming .textRed {
   color: red;
   font-size: 1.5rem;
 }
+main section.industrial {
+  width: 100%;
+}
+main section.industrial h2 {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+}
+main section.industrial hr {
+  border: 2px solid rgb(0, 0, 0);
+}
+main section.industrial div {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
+}
+main section.industrial div p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bolder;
+}
+main section.industrial div p img {
+  padding: 1.5rem 2rem;
+  transition: 0.2s;
+}
+main section.industrial div p img:hover {
+  transform: scale(1.2);
+}
+main section.industrial p {
+  display: flex;
+}
+main section.industrial ul {
+  display: flex;
+}
+main section.industrial ul li {
+  list-style-type: none;
+  padding: 0.5rem 2rem;
+}
+main section.industrial ul li a {
+  color: cornflowerblue;
+  font-weight: bolder;
+  text-decoration: none;
+}
 
 #curve_chart {
   width: 100%;
@@ -113,5 +159,16 @@ main section.farming .textRed {
 @media screen and (max-width: 800px) {
   nav ul {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 900px) {
+  main section.industrial div.imgPicture img.pocture1 {
+    padding: 0.5rem 0.2rem;
+    width: 8vw;
+    height: 8vh;
+  }
+  main section.industrial div.imgPicture p {
+    font-size: 0.5rem;
+    font-weight: normal;
   }
 }/*# sourceMappingURL=styles.css.map */

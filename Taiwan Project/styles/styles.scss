@@ -86,7 +86,6 @@ main {
 		h2 {
 			display: flex;
 			justify-content: center;
-			// font-size: 2rem;
 		}
 		hr {
 			border: 2px solid rgb(0, 0, 0);
@@ -107,6 +106,52 @@ main {
 			font-size: 1.5rem;
 		}
 	}
+	section.industrial {
+		width: 100%;
+		h2 {
+			display: flex;
+			justify-content: center;
+			padding: 1rem 0rem;
+			font-size: 2.5rem;
+		}
+		hr {
+			border: 2px solid rgb(0, 0, 0);
+		}
+		div {
+			display: flex;
+			justify-content: center;
+			padding: 2rem 0rem;
+			flex-wrap: wrap;
+			p {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: bolder;
+				img {
+					padding: 1.5rem 2rem;
+					transition: 0.2s;
+				}
+				img:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+		p {
+			display: flex;
+		}
+		ul {
+			display: flex;
+			li {
+				list-style-type: none;
+				padding: 0.5rem 2rem;
+				a {
+					color: cornflowerblue;
+					font-weight: bolder;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 #curve_chart {
 	width: 100%;
@@ -116,5 +161,22 @@ main {
 @media screen and (max-width: 800px) {
 	nav ul {
 		flex-direction: column;
+	}
+}
+@media screen and (max-width: 900px) {
+	main {
+		section.industrial {
+			div.imgPicture {
+				img.pocture1 {
+					padding: 0.5rem 0.2rem;
+					width: 8vw;
+					height: 8vh;
+				}
+				p {
+					font-size: 0.5rem;
+					font-weight: normal;
+				}
+			}
+		}
 	}
 }
