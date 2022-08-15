@@ -57,6 +57,9 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
+main p {
+  display: flex;
+}
 main section {
   padding: 1.5rem;
 }
@@ -104,51 +107,103 @@ main section.farming .textRed {
   color: red;
   font-size: 1.5rem;
 }
-main section.industrial {
-  width: 100%;
-}
 main section.industrial h2 {
   display: flex;
   justify-content: center;
   padding: 1rem 0rem;
   font-size: 2.5rem;
 }
-main section.industrial hr {
+main section.industrial div.boxIndustrial {
+  height: 50vh;
+  display: flex;
+}
+main section.industrial div.boxIndustrial div {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+  display: flex;
+  padding: 0.5rem 0rem;
+}
+main section.industrial div.boxIndustrial div h3 {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+}
+main section.industrial div.boxIndustrial div p {
+  text-align: left;
+  padding: 0.5rem 0.25rem;
+}
+main section.economyPicture {
+  width: 100%;
+}
+main section.economyPicture h2 {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+}
+main section.economyPicture hr {
   border: 2px solid rgb(0, 0, 0);
 }
-main section.industrial div {
+main section.economyPicture div {
   display: flex;
   justify-content: center;
   padding: 2rem 0rem;
   flex-wrap: wrap;
 }
-main section.industrial div p {
+main section.economyPicture div p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-weight: bolder;
 }
-main section.industrial div p img {
-  padding: 1.5rem 2rem;
+main section.economyPicture div p img {
+  padding: 1rem 1.15rem;
   transition: 0.2s;
 }
-main section.industrial div p img:hover {
+main section.economyPicture div p img:hover {
   transform: scale(1.2);
 }
-main section.industrial p {
+main section.economyPicture ul {
   display: flex;
 }
-main section.industrial ul {
-  display: flex;
-}
-main section.industrial ul li {
+main section.economyPicture ul li {
   list-style-type: none;
   padding: 0.5rem 2rem;
 }
-main section.industrial ul li a {
+main section.economyPicture ul li a {
   color: cornflowerblue;
   font-weight: bolder;
   text-decoration: none;
+}
+main section.author {
+  display: flex;
+}
+main section.author div.authorRight {
+  width: 15%;
+}
+main section.author div.authorRight img {
+  width: 10vw;
+  height: 28vh;
+  border-radius: 50%;
+  padding: 1rem 0.15rem;
+  transition: 0.2s;
+}
+main section.author div.authorRight img:hover {
+  transform: scale(1.2);
+}
+main section.author div.authorLeft {
+  width: 85%;
+}
+main section.author div.authorLeft h2 {
+  padding: 0.5rem 0rem;
+}
+main section.author div.authorLeft p {
+  padding: 0.5rem 0rem;
+}
+main section.author div.authorLeft h3 {
+  padding: 0.5rem 0rem;
+}
+main section.author div.authorLeft ul {
+  padding: 0.5rem 1.5rem;
 }
 
 #curve_chart {
@@ -157,18 +212,39 @@ main section.industrial ul li a {
 }
 
 @media screen and (max-width: 800px) {
+  main section.economyPicture div.imgPicture {
+    padding: 0.5rem;
+  }
+  main section.economyPicture div.imgPicture img.pocture1 {
+    padding: 0;
+  }
   nav ul {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 900px) {
-  main section.industrial div.imgPicture img.pocture1 {
-    padding: 0.5rem 0.2rem;
-    width: 8vw;
-    height: 8vh;
+  main section.industrial div.boxIndustrial {
+    display: inline;
   }
-  main section.industrial div.imgPicture p {
+  main section.economyPicture div.imgPicture img.pocture1 {
+    width: 10vw;
+    height: 10vh;
+  }
+  main section.economyPicture div.imgPicture p {
     font-size: 0.5rem;
     font-weight: normal;
+  }
+  main section.author {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.author div.authorRight {
+    width: 50%;
+  }
+  main section.author div.authorRight img {
+    justify-content: center;
+    padding: 0 1.5rem;
+    width: 10rem;
+    height: 8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
