@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>會員登入 | 夏威夷最方便快速的旅遊網站</title>
+		<meta name="robots" content="index, follow" />
+		<base target="_self" />
+		<meta
+			name="description"
+			content="我們提供夏威夷旅遊租借服務，例如衝浪板、車子和帳篷等等"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- 作者 -->
+		<meta name="author" content="Rocky Wu" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="logo">
+				<img src="./Icons/black logo.svg" alt="Loge" />
+				<h1>夏威夷旅遊租借服務</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="./index.html">首頁</a></li>
+					<li><a href="./about.html">關於我們</a></li>
+					<li><a href="./login.html">會員登入</a></li>
+					<li><a href="#">聯絡我們</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<!-- image part of the first page -->
+			<section class="backImage">
+				<div class="filter"></div>
+				<div class="contact">
+					<h1 class="section-header">聯絡我們</h1>
+
+					<div class="contact-wrapper">
+						<!-- Left contact page -->
+
+						<form id="contact-form" class="form-horizontal" role="form">
+							<div class="form-group">
+								<input
+									type="text"
+									class="form-control"
+									id="name"
+									placeholder="NAME"
+									name="name"
+									value=""
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="EMAIL"
+									name="email"
+									value=""
+									required
+								/>
+							</div>
+
+							<textarea
+								class="form-control"
+								rows="10"
+								placeholder="MESSAGE"
+								name="message"
+								required
+							></textarea>
+
+							<button
+								class="btn send-button"
+								id="submit"
+								type="submit"
+								value="SEND"
+							>
+								<div class="alt-send-button">
+									<img
+										src="./Icons/email-send.png"
+										alt="email-send"
+										class="send_icon"
+									/>
+									<span class="send-text">SEND</span>
+								</div>
+							</button>
+						</form>
+
+						<!-- Left contact page -->
+
+						<div class="direct-contact-container">
+							<ul class="contact-list">
+								<li class="list-item">
+									<img src="./Icons/address.png" alt="address" />
+									<span class="contact-text place">
+										City, Hawail, No. 5, Lane 20, Thank You Street</span
+									>
+								</li>
+
+								<li class="list-item">
+									<img src="./Icons/phone.png" alt="phone" />
+									<span class="contact-text phone"
+										><a href="tel:1-212-555-5555" title="Give me a call"
+											>(XXX) XXX-XXXXX</a
+										></span
+									>
+								</li>
+
+								<li class="list-item">
+									<img src="./Icons/mail.png" alt="mail" />
+									<span class="contact-text gmail"
+										><a href="mailto:#" title="Send me an email"
+											>hawaiiproject@gmail.com</a
+										></span
+									>
+								</li>
+							</ul>
+
+							<hr />
+
+							<div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="logo">
+				<img src="./Icons/black logo.svg" alt="Loge" />
+				<h1>夏威夷旅遊租借服務</h1>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./about.html">About</a></li>
+					<li><a href="./login.html">Login</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="logMedia">
+				<div class="socialMedia">
+					<img src="./Icons/youtube.svg" alt="loge" />
+				</div>
+
+				<div class="socialMedia">
+					<img src="./Icons/twitter.svg" alt="loge" />
+				</div>
+
+				<div class="socialMedia">
+					<img src="./Icons/instagram.svg" alt="loge" />
+				</div>
+
+				<div class="socialMedia">
+					<img src="./Icons/facebook.svg" alt="loge" />
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="./app.js"></script>
+</html>
