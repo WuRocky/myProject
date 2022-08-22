@@ -14,38 +14,48 @@ h6 {
 }
 
 header {
-	background-color: #c4c4c4;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: sticky;
 	width: 100%;
-	padding: 1rem;
+	top: 0;
+	z-index: 5;
+	background-color: #c4c4c4;
+	transition: all 0.5s ease;
 	.heardTitle {
+		padding: 1rem 0 1rem 1rem;
 		font-size: 2.5rem;
 	}
 	.heardText {
+		padding: 1rem 0rem 1rem 1rem;
 		font-size: 1rem;
 	}
-}
-
-nav {
-	background-color: #7a7a7a;
-	ul {
-		display: flex;
-		padding-left: 1rem;
-		list-style-type: none;
-		li {
+	nav {
+		background-color: #7a7a7a;
+		width: 100%;
+		padding: 0.5rem 0rem;
+		transition: all 0.5s ease;
+		ul {
 			display: flex;
-			padding: 0.1rem 0.5rem;
-			a {
-				padding: 0.5rem 0.5rem;
-				color: rgb(184, 179, 179);
-				text-decoration: none;
-				font-size: 1.05rem;
-				transition: all 0.25s ease;
-			}
-			a:hover {
-				color: white;
-			}
-			.active {
-				color: white;
+
+			list-style-type: none;
+			li {
+				display: flex;
+				padding: 0.1rem 0.5rem;
+				a {
+					padding: 0.5rem 0.5rem;
+					color: rgb(184, 179, 179);
+					text-decoration: none;
+					font-size: 1.05rem;
+					transition: all 0.25s ease;
+				}
+				a:hover {
+					color: white;
+				}
+				.active {
+					color: white;
+				}
 			}
 		}
 	}
@@ -246,7 +256,6 @@ main {
 		section.economyPicture {
 			div.imgPicture {
 				img.pocture1 {
-					// padding: 0.5rem 0.2rem;
 					width: 10vw;
 					height: 10vh;
 				}

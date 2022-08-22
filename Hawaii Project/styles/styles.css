@@ -32,8 +32,12 @@ header div.logo {
   margin-left: 2rem;
 }
 header div.logo img {
+  transition: all 0.5s ease;
+  margin: 0.5rem;
+  padding: 0.15rem;
   height: 6vw;
   width: 6vw;
+  border-radius: 35%;
 }
 header nav {
   flex: 2 1 400px;

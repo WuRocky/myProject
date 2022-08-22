@@ -1,3 +1,23 @@
+let header = document.querySelector("header");
+let nav = document.querySelector("header nav");
+let hedaerAnchor = document.querySelectorAll("header nav ul li a");
+
+// console.log(hedaerAnchor);
+
+window.addEventListener("scroll", () => {
+	if (window.pageYOffset != 0) {
+		header.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+		header.style.color = "white";
+		nav.style.backgroundColor = "rgba(90, 90, 90, 0.5)";
+		hedaerAnchor.forEach((a) => {
+			a.style.color = "white";
+		});
+	} else {
+		header.style.backgroundColor = "";
+		nav.style.backgroundColor = "";
+	}
+});
+
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
@@ -29,3 +49,5 @@ function drawChart() {
 
 	chart.draw(data, options);
 }
+
+// header.style.backgroundColor
